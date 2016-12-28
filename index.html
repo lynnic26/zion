@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <div id="root">
+	  <h1 z-model="title"></h1>
+	  <div>
+	    <div z-model="user"></div>
+	  </div>
+	</div>
+
+	<script src="zion.js"></script>
+	<script>
+		let data = {
+			title: 'todo list',
+			user: 'Lynnic'
+		}
+		let z = new Zion(data, function(newVal) {
+            alert(newVal);
+		});
+	</script>
+</body>
+</html>
