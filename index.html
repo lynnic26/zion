@@ -16,9 +16,12 @@
 	<script>
 		let data = {
 			title: 'todo list',
-			user: 'Lynnic'
+			user: 'Lynnic',
+			test: {
+				a: 'b'
+			}
 		}
-		let z = new Zion(data, function(newVal) {
+		let z = new Zion(data, function(newVal, oldVal) {
             alert(newVal);
 		});
 	</script>
